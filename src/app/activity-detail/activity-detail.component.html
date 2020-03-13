@@ -1,0 +1,9 @@
+<ActionBar title="Details" (tap)="backClicked()"></ActionBar>
+
+<FlexboxLayout flexDirection="column">
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="activity.id + '. '"></Label>
+        <Label class="h2" [text]="activity.content"></Label>
+    </FlexboxLayout>
+    <Label class="h4 m-15" [checkbox]="activity.done"></Label>
+</FlexboxLayout>
